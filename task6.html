@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="task6.css">
+	
+	<title>task6</title>
+
+</head>
+<body>
+	<div class="header">
+		<div class="midle_box"><div class="a" >找雇主</div><div class="b">找护工</div></div>
+		<div class="big_locate"></div>
+	</div>
+	
+	<div class="big_box">
+		<div class="choose">
+		<div class="dropdown1">
+		<a class="btn-select" id="btn_select0">
+           
+            <span>所在地</span> <span class="caret"></span>           
+            <select class="select1">
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+				<option>深圳</option>
+				<option>选项五</option>
+			</select></a>
+		</div>
+
+       
+		<div class="dropdown2"><a class="btn-select" id="btn_select1">
+           
+            <span>食宿</span> <span class="caret"></span>           
+            <select class="select1">
+				<option>选项一</option>
+				<option>选项二</option>
+				<option>选项三</option>
+				<option>选项四</option>
+				<option>选项五</option>
+			</select></a>
+       </div>
+		<div class="dropdown3"><a class="btn-select" id="btn_select2">
+           
+            <span>健康情况</span> <span class="caret"></span>           
+            <select class="select1">
+				<option>健康</option>
+				<option>体弱</option>
+				<option>选项三</option>
+				<option>选项四</option>
+				<option>选项五</option>
+			</select></a>
+       </div>
+		<div style="clear: both;"></div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+					
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+					
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+					
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+					
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>
+		</div>
+		<div class="content">
+			<div class="service_date">
+				<div class="calendar_pic"></div><span style="line-height: 35px;">服务日期</span></div>
+				<div class="service_time">
+						<span style="margin-left:46px;">1020-9-9至2202-6-6<span>
+					</div>
+					<div  class="price">
+						<span style="margin-right:20px;">25元/小时<span>
+				</div>
+				<div class="location">
+				<div class="locat_pic"></div>北京.通州.果园</div>	</div>
+	<div style="width: 10%;height: 100px;"></div>
+	<div class="footer">
+		<div class="float_box">	
+		<div class="home_box"></div>
+		<p class="p1">首页</p>
+		</div>	
+		<div class="write_box"></div>
+		<div class="float_box" onclick="window.open('task5.html','_self')">	
+		<div class="man_box" ></div> 
+		<p class="p2">我的</p>
+		</div>			
+	</div>
+</body>
+
+<script>
+function c(id) {
+return document.getElementById(id);
+}
+window.onload = function () {
+
+			var btnSelect0 = c("btn_select0");
+			var curSelect0 = btnSelect0.getElementsByTagName("span")[0];
+			var oSelect0 = btnSelect0.getElementsByTagName("select")[0];
+			var aOption0 = btnSelect0.getElementsByTagName("option");
+			oSelect0.onchange = function () {
+				var text=oSelect0.options[oSelect0.selectedIndex].text;
+				
+				curSelect0.innerHTML = text;
+			}
+	
+	var btnSelect1 = c("btn_select1");
+			var curSelect1 = btnSelect1.getElementsByTagName("span")[0];
+			var oSelect1 = btnSelect1.getElementsByTagName("select")[0];
+			var aOption1 = btnSelect1.getElementsByTagName("option");
+			oSelect1.onchange = function () {
+				var text=oSelect1.options[oSelect1.selectedIndex].text;
+				
+				curSelect1.innerHTML = text;
+			}
+
+				var btnSelect2 = c("btn_select2");
+			var curSelect2 = btnSelect2.getElementsByTagName("span")[0];
+			var oSelect2 = btnSelect2.getElementsByTagName("select")[0];
+			var aOption2 = btnSelect2.getElementsByTagName("option");
+			oSelect2.onchange = function () {
+				var text=oSelect2.options[oSelect2.selectedIndex].text;
+				
+				curSelect2.innerHTML = text;
+			}
+
+			var oA=document.getElementsByClassName('header')[0].getElementsByClassName('midle_box')[0].getElementsByClassName('a')[0];
+			var oB=document.getElementsByClassName('header')[0].getElementsByClassName('midle_box')[0].getElementsByClassName('b')[0];
+
+			var zindex=3;
+			oA.onclick=function () {
+				oA.style.zIndex =zindex++;
+				oA.style.width='49%';
+				oB.style.width='48%';
+				oA.style.background='#ffffff';
+				oA.style.color='#5ac0ce';
+				oB.style.background=' #54a7b3';
+				oB.style.color='white';
+
+				}
+			oB.onclick=function () {
+				oB.style.zIndex =zindex++;
+				oB.style.width='49%';
+				oA.style.width='48%';
+				oB.style.background='#ffffff';
+				oB.style.color='#5ac0ce';
+				oA.style.background=' #54a7b3';
+				oA.style.color='white';
+				}
+			/*var myHmoe=document.getElementsByClassName('footer')[0].getElementsByClassName('float_box')[1];
+			myHmoe.onclick=function function_name(argument) {
+				// body...
+			}*/
+
+
+};
+</script>
+</html>
